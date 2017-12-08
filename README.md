@@ -1,3 +1,3 @@
 # A-Tree
 
-!(https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+!(https://raw.githubusercontent.com/Coder206/A-Tree/master/A-Tree.png)
