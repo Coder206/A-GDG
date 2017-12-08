@@ -6,16 +6,18 @@
   </head>
   <body>
     <a-scene>
+        <a-camera position="10 2 10" rotation="0 50 0"></a-camera>
       <!-- Snow --> 
-      <a-entity particle-system="preset: snow" position="0 0 -10" particleCount="2000"></a-entity>
+      <a-entity particle-system="preset: snow; particleCount:60000"></a-entity>
       <a-entity star="points: 23" position="0 5"></a-entity>
       <a-cone color="green" radius-bottom="0.8" radius-top="0" position="0 3"></a-cone>
       <a-cone color="green" radius-bottom="1.5" radius-top="0.3" position="0 2"></a-cone>
       <a-cylinder color="gold" radius="0.05" height="0.05" position="1 1.5"></a-cylinder>
       <a-sphere color="red" radius=0.2 position="1 1.3"></a-sphere>
-      <a-torus-knot color="silver" metalness="0.5" position="0 10" p="4" radius-tubular=".1" roughness="0.1" rotation="-90 0 0"></a-torus-knot>
+      <a-torus-knot color="silver" metalness="0.25" position="0 1.5" p="8" radius-tubular=".025"  scale="1 1 2.5" roughness="0.2" rotation="-90  0" 
+            displacement-map="https://i.pinimg.com/736x/a9/35/88/a93588537aca95ed73a1d172a6869ebd.jpg"></a-torus-knot>
       <a-cone color="green" radius-bottom="2" radius-top="0.7" position="0 1"></a-cone>
-      <a-cylinder color="brown" radius="0.5" position="0 0.5"></a-cylinder>
+      <a-cylinder color="#773f00" radius="0.5" position="0 0.5"></a-cylinder>
       <a-plane color="#CCC" height="20" width="20" rotation="-90 0 0"></a-plane>
       <!-- Blue sky -->
       <a-sky color="#4286f4"></a-sky>
