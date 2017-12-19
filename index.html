@@ -60,6 +60,54 @@
             <a-cylinder color="brown" height="1.5" radius="0.07" position="1 2.25 0" rotation="0 0 -45 "></a-cylinder>
             <a-cylinder color="brown" height="1.5" radius="0.07" position="-1 2.25 0" rotation="0 0 45 "></a-cylinder>
         </a-entity>
+        
+        <!--Trevor's Tree-->
+        <a-entity position="-8 0 6" rotation="0 45 0">
+        <!--Tree-->
+        <a-entity>
+          <a-cylinder position="0 1 0" color="brown" height="2" radius=".5"></a-cylinder>
+          <a-cone position="0 4 0" color="green" radius-bottom="4" radius-top="0" height="4" segments-radial="4"></a-cone>
+          <a-cone position="0 4 0" color="green" radius-bottom="4" radius-top="0" height="4" segments-radial="4" theta-start="45"></a-cone>
+          <a-cone position="0 4.75 0" color="green" radius-bottom="3.5" radius-top="0" height="3.5" segments-radial="4"></a-cone>
+          <a-cone position="0 4.75 0" color="green" radius-bottom="3.5" radius-top="0" height="3.5" segments-radial="4" theta-start="45"></a-cone>
+          <a-cone position="0 5.5 0" color="green" radius-bottom="3" radius-top="0" height="3" segments-radial="4"></a-cone>
+          <a-cone position="0 5.5 0" color="green" radius-bottom="3" radius-top="0" height="3" segments-radial="4" theta-start="45"></a-cone>
+          <a-cone position="0 7 0" color="green" radius-bottom="2.5" radius-top="0" height="4" segments-radial="4"></a-cone>
+          <a-cone position="0 7 0" color="green" radius-bottom="2.5" radius-top="0" height="4" segments-radial="4" theta-start="45"></a-cone>
+        </a-entity>
+
+        <!-- Star -->
+        <a-entity position="0 9 0">
+          <a-sphere color="gold" position="0 .1 0" radius=".35"></a-sphere>
+          <a-cone color="gold" position="0 .75 0" radius-bottom=".3" radius-top="0" height="1.5"></a-cone>
+          <a-cone color="gold" position="-0.75 .3 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 72"></a-cone>
+          <a-cone color="gold" position="0.75 .3 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 -72"></a-cone>
+          <a-cone color="gold" position="-0.5 -.5 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 144"></a-cone>
+          <a-cone color="gold" position="0.5 -.5 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 -144"></a-cone>
+        </a-entity>
+
+        <!--Presents-->
+        <a-box position="2 .5 0" color="blue" change-color-on-hover>
+          <a-text id="boxText" value="Click Me!" align="center" color="#FFF" visible="false" position="1.4 .5 0.55"
+                  geometry="primitive: plane; width: 1.75" material="color: #333"></a-text>
+        </a-box>
+        <a-box position="-2 .5 0" color="red">
+        </a-box>
+
+        <a-entity
+          position="4 8 0"
+          text="width: 12;
+            lineheight: 50;
+            color: red;
+            anchor: left;
+            baseline: top;
+            wrapCount: 17;
+            value: Merry Christmas and a Happy New Year from GDG Sudbury"
+          rotation
+          scale
+          visible></a-entity>
+      </a-entity>
+        
         <!-- Blue sky -->
         <a-sky color="#4286f4"></a-sky>
     </a-scene>
