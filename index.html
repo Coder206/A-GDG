@@ -1,67 +1,64 @@
 <html>
-  <head>
+
+<head>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://rawgit.com/andreasplesch/aframe-star-component/master/dist/aframe-star-component.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <a-camera position="10 2 10" rotation="0 50 0"></a-camera>
-      <!-- Snow --> 
-      <a-entity particle-system="preset: snow; particleCount:20000"></a-entity>
-      <!-- Star -->
-      <a-entity>
-        <a-cone color="gold" position="0 3.75 0" radius-bottom=".1" height=".3"></a-cone>
-        <a-cone color="gold" position="0 3.595 0.15" radius-bottom=".1" height=".3" rotation=" 72"></a-cone>
-        <a-cone color="gold" position="0 3.595 -.15" radius-bottom=".1" height=".3" rotation=" -72"></a-cone>
-        <a-cone color="gold" position="0 3.45 0.09" radius-bottom=".1" height=".3" rotation=" 144"></a-cone>
-        <a-cone color="gold" position="0 3.45 -0.1" radius-bottom=".1" height=".3" rotation=" -144"></a-cone>
-      </a-entity>
-      <!-- Top tree -->
-      <a-cone color="green" radius-bottom="0.8" radius-top="0" position="0 3"></a-cone>
-      <!-- Mid tree -->
-      <a-cone color="green" radius-bottom="1.5" radius-top="0.3" position="0 2"></a-cone>
-      <!-- Bauble -->
-      <a-cylinder color="gold" radius="0.05" height="0.05" position="1 1.5"></a-cylinder>
-      <a-sphere color="red" radius=0.2 position="1 1.3"></a-sphere>
-      <!-- Tinsel -->
-      <a-torus-knot color="silver" metalness="0.25" position="0 1.5" p="8" radius-tubular=".025"  scale="1 1 2.5" roughness="0.2" rotation="-90  0" 
-            ></a-torus-knot>
-      <!-- Bottom tree -->
-      <a-cone color="green" radius-bottom="2" radius-top="0.7" position="0 1"></a-cone>
-      <!-- Stump -->
-      <a-cylinder color="#773f00" radius="0.5" position="0 0.5"></a-cylinder>
-      <a-plane color="#CCC" height="20" width="20" rotation="-90 0 0"></a-plane>
-      <a-entity>
-        <a-camera position="0 7 7" rotation="-45 0 0 "> </a-camera>
-      <a-sky color="#4286F4"> </a-sky>
-      <a-entity particle-system="preset: snow" position="0 0 -10"></a-entity>
-      <a-plane color="#c2cad6" rotation="-90 0 0" height=100 width=100> </a-plane>
-      
-      
-      <a-sphere radius="1" color="white" position="0 0.90"> </a-sphere>
-      <a-sphere radius="0.8" color="white" position="0 1.90"> </a-sphere>
-      <a-sphere radius="0.6" color="white" position="0 2.90"> </a-sphere>
-      
-      <a-cone color="tomato" height="1" radius-bottom="0.2" radius-top="0" rotation="80 0 0" position = "0 3.1 0.85"> </a-cone>
-      
-      <a-cylinder color="black" height="0.7" radius="0.5" position="0 3.5 -0.32" rotation="-35 0 0 "></a-cylinder>
-      <a-cylinder color="black" height="0.2" radius="0.7" position="0 3.2 -0.15" rotation="-35 0 0"></a-cylinder>
-      
-      <a-sphere radius="0.1" color="black" position="0 0.7 0.95"> </a-sphere>
-      <a-sphere radius="0.1" color="black" position="0 1.25 0.93"> </a-sphere>
-      <a-sphere radius="0.1" color="black" position="0 1.85 0.77"> </a-sphere>
-      <a-sphere radius="0.1" color="black" position="0 2.35 0.65"> </a-sphere>
+</head>
 
-      
-      <a-sphere radius="0.1" color="black" position="-0.25 3.3 0.4"> </a-sphere>
-      <a-sphere radius="0.1" color="black" position="0.25 3.3 0.4"> </a-sphere>
-      
-      <a-cylinder color="brown" height="1.5" radius="0.07" position="1 2.25 0" rotation="0 0 -45 "></a-cylinder>
-      <a-cylinder color="brown" height="1.5" radius="0.07" position="-1 2.25 0" rotation="0 0 45 "></a-cylinder>
-      </a-entity>
-      <!-- Blue sky -->
-      <a-sky color="#4286f4"></a-sky>
+<body>
+    <a-scene>
+        <a-camera position="10 2 10" rotation="0 50 0"></a-camera>
+        <!-- Snow -->
+        <a-entity particle-system="preset: snow; particleCount:20000"></a-entity>
+        <!-- Star -->
+        <a-entity>
+            <a-cone color="gold" position="0 3.75 0" radius-bottom=".1" height=".3"></a-cone>
+            <a-cone color="gold" position="0 3.595 0.15" radius-bottom=".1" height=".3" rotation=" 72"></a-cone>
+            <a-cone color="gold" position="0 3.595 -.15" radius-bottom=".1" height=".3" rotation=" -72"></a-cone>
+            <a-cone color="gold" position="0 3.45 0.09" radius-bottom=".1" height=".3" rotation=" 144"></a-cone>
+            <a-cone color="gold" position="0 3.45 -0.1" radius-bottom=".1" height=".3" rotation=" -144"></a-cone>
+        </a-entity>
+        <!-- Top tree -->
+        <a-cone color="green" radius-bottom="0.8" radius-top="0" position="0 3"></a-cone>
+        <!-- Mid tree -->
+        <a-cone color="green" radius-bottom="1.5" radius-top="0.3" position="0 2"></a-cone>
+        <!-- Bauble -->
+        <a-cylinder color="gold" radius="0.05" height="0.05" position="1 1.5"></a-cylinder>
+        <a-sphere color="red" radius=0.2 position="1 1.3"></a-sphere>
+        <!-- Tinsel -->
+        <a-torus-knot color="silver" metalness="0.25" position="0 1.5" p="8" radius-tubular=".025" scale="1 1 2.5" roughness="0.2" rotation="-90  0"></a-torus-knot>
+        <!-- Bottom tree -->
+        <a-cone color="green" radius-bottom="2" radius-top="0.7" position="0 1"></a-cone>
+        <!-- Stump -->
+        <a-cylinder color="#773f00" radius="0.5" position="0 0.5"></a-cylinder>
+        <a-plane color="#CCC" height="20" width="20" rotation="-90 0 0"></a-plane>
+        
+        <!-- Snowman -->
+        <a-entity position="5 0 -5">
+            <a-sphere radius="1" color="white" position="0 0.90"> </a-sphere>
+            <a-sphere radius="0.8" color="white" position="0 1.90"> </a-sphere>
+            <a-sphere radius="0.6" color="white" position="0 2.90"> </a-sphere>
+
+            <a-cone color="tomato" height="1" radius-bottom="0.2" radius-top="0" rotation="80 0 0" position="0 3.1 0.85"> </a-cone>
+
+            <a-cylinder color="black" height="0.7" radius="0.5" position="0 3.5 -0.32" rotation="-35 0 0 "></a-cylinder>
+            <a-cylinder color="black" height="0.2" radius="0.7" position="0 3.2 -0.15" rotation="-35 0 0"></a-cylinder>
+
+            <a-sphere radius="0.1" color="black" position="0 0.7 0.95"> </a-sphere>
+            <a-sphere radius="0.1" color="black" position="0 1.25 0.93"> </a-sphere>
+            <a-sphere radius="0.1" color="black" position="0 1.85 0.77"> </a-sphere>
+            <a-sphere radius="0.1" color="black" position="0 2.35 0.65"> </a-sphere>
+
+            <a-sphere radius="0.1" color="black" position="-0.25 3.3 0.4"> </a-sphere>
+            <a-sphere radius="0.1" color="black" position="0.25 3.3 0.4"> </a-sphere>
+
+            <a-cylinder color="brown" height="1.5" radius="0.07" position="1 2.25 0" rotation="0 0 -45 "></a-cylinder>
+            <a-cylinder color="brown" height="1.5" radius="0.07" position="-1 2.25 0" rotation="0 0 45 "></a-cylinder>
+        </a-entity>
+        <!-- Blue sky -->
+        <a-sky color="#4286f4"></a-sky>
     </a-scene>
-  </body>
+</body>
+
 </html>
