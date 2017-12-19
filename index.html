@@ -10,28 +10,32 @@
     <a-scene>
         <a-camera position="10 2 10" rotation="0 50 0"></a-camera>
         <!-- Snow -->
-        <a-entity particle-system="preset: snow; particleCount:20000"></a-entity>
-        <!-- Star -->
-        <a-entity>
-            <a-cone color="gold" position="0 3.75 0" radius-bottom=".1" height=".3"></a-cone>
-            <a-cone color="gold" position="0 3.595 0.15" radius-bottom=".1" height=".3" rotation=" 72"></a-cone>
-            <a-cone color="gold" position="0 3.595 -.15" radius-bottom=".1" height=".3" rotation=" -72"></a-cone>
-            <a-cone color="gold" position="0 3.45 0.09" radius-bottom=".1" height=".3" rotation=" 144"></a-cone>
-            <a-cone color="gold" position="0 3.45 -0.1" radius-bottom=".1" height=".3" rotation=" -144"></a-cone>
+        <a-entity particle-system="preset: snow; particleCount:20000; texture:snowflake.png"></a-entity>
+        <!-- Tree -->
+        <a-entity scale="3 3 3">
+            <!-- Star -->
+            <a-entity>
+                <a-cone color="gold" position="0 3.75 0" radius-bottom=".1" height=".3"></a-cone>
+                <a-cone color="gold" position="0 3.595 0.15" radius-bottom=".1" height=".3" rotation=" 72"></a-cone>
+                <a-cone color="gold" position="0 3.595 -.15" radius-bottom=".1" height=".3" rotation=" -72"></a-cone>
+                <a-cone color="gold" position="0 3.45 0.09" radius-bottom=".1" height=".3" rotation=" 144"></a-cone>
+                <a-cone color="gold" position="0 3.45 -0.1" radius-bottom=".1" height=".3" rotation=" -144"></a-cone>
+            </a-entity>
+            <!-- Top tree -->
+            <a-cone color="green" radius-bottom="0.8" radius-top="0" position="0 3"></a-cone>
+            <!-- Mid tree -->
+            <a-cone color="green" radius-bottom="1.5" radius-top="0.3" position="0 2"></a-cone>
+            <!-- Bauble -->
+            <a-cylinder color="gold" radius="0.05" height="0.05" position="1 1.5"></a-cylinder>
+            <a-sphere color="red" radius=0.2 position="1 1.3"></a-sphere>
+            <!-- Tinsel -->
+            <a-torus-knot color="silver" metalness="0.25" position="0 1.5" p="8" radius-tubular=".025" scale="1 1 2.5" roughness="0.2" rotation="-90  0"></a-torus-knot>
+            <!-- Bottom tree -->
+            <a-cone color="green" radius-bottom="2" radius-top="0.7" position="0 1"></a-cone>
+            <!-- Stump -->
+            <a-cylinder color="#773f00" radius="0.5" position="0 0.5"></a-cylinder>
         </a-entity>
-        <!-- Top tree -->
-        <a-cone color="green" radius-bottom="0.8" radius-top="0" position="0 3"></a-cone>
-        <!-- Mid tree -->
-        <a-cone color="green" radius-bottom="1.5" radius-top="0.3" position="0 2"></a-cone>
-        <!-- Bauble -->
-        <a-cylinder color="gold" radius="0.05" height="0.05" position="1 1.5"></a-cylinder>
-        <a-sphere color="red" radius=0.2 position="1 1.3"></a-sphere>
-        <!-- Tinsel -->
-        <a-torus-knot color="silver" metalness="0.25" position="0 1.5" p="8" radius-tubular=".025" scale="1 1 2.5" roughness="0.2" rotation="-90  0"></a-torus-knot>
-        <!-- Bottom tree -->
-        <a-cone color="green" radius-bottom="2" radius-top="0.7" position="0 1"></a-cone>
-        <!-- Stump -->
-        <a-cylinder color="#773f00" radius="0.5" position="0 0.5"></a-cylinder>
+
         <a-plane color="#CCC" height="20" width="20" rotation="-90 0 0"></a-plane>
         
         <!-- Snowman -->
