@@ -8,6 +8,11 @@
 
 <body>
     <a-scene>
+        <a-assets>
+            <a-asset-item id="cane-obj" src="CandyCane.obj"></a-asset-item>
+            <a-asset-item id="cane-mtl" src="CandyCane.mtl"></a-asset-item>
+        </a-asets>
+        
         <a-camera position="10 2 10" rotation="0 50 0"></a-camera>
         <!-- Snow -->
         <a-entity particle-system="preset: snow; particleCount:20000; texture:snowflake.png"></a-entity>
@@ -149,6 +154,13 @@
             <a-box position="-0.112 0.318 -1.278" rotation="-37.013 0 0" scale="2.523 0.015 1.153" material="color:#b92424"></a-box>
         </a-entity>
         
+        <!-- Candy Cane -->
+        <a-obj-model src="#cane-obj"
+          mtl="#cane-mtl"
+          position="2 0.05 -7.5"
+          scale="1 1 1"
+        ></a-obj-model>
+
         <!-- Blue sky -->
         <a-sky color="#4286f4"></a-sky>
         <!-- Member ball ornament -->
