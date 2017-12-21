@@ -7,12 +7,7 @@
 </head>
 
 <body>
-    <a-scene>
-        <a-assets>
-            <a-asset-item id="cane-obj" src="CandyCane.obj"></a-asset-item>
-            <a-asset-item id="cane-mtl" src="CandyCane.mtl"></a-asset-item>
-        </a-asets>
-        
+    <a-scene>        
         <a-camera position="10 2 10" rotation="0 50 0"></a-camera>
         <!-- Snow -->
         <a-entity particle-system="preset: snow; particleCount:20000; texture:snowflake.png"></a-entity>
@@ -98,19 +93,6 @@
         </a-box>
         <a-box position="-2 .5 0" color="red">
         </a-box>
-
-        <a-entity
-          position="4 8 0"
-          text="width: 12;
-            lineheight: 50;
-            color: red;
-            anchor: left;
-            baseline: top;
-            wrapCount: 17;
-            value: Merry Christmas and a Happy New Year from GDG Sudbury"
-          rotation
-          scale
-          visible></a-entity>
       </a-entity>
       
         <!--Sled-->
@@ -155,11 +137,43 @@
         </a-entity>
         
         <!-- Candy Cane -->
-        <a-obj-model src="#cane-obj"
-          mtl="#cane-mtl"
-          position="2 0.05 -7.5"
+        <a-obj-model src="./CandyCane.obj"
+          mtl="./CandyCane.mtl"
+          position="6 0.05 -9"
           scale="1 1 1"
         ></a-obj-model>
+
+        <!-- Presents -->
+        <a-obj-model src="./PresentBlue.obj"
+          mtl="./PresentBlue.mtl"
+          position="0 0.05 7"
+          scale="1 1 1"
+        ></a-obj-model>
+
+        <a-obj-model src="./PresentGreen.obj"
+          mtl="./PresentGreen.mtl"
+          position="2 0.05 6"
+          scale="1 1 1"
+        ></a-obj-model>
+
+        <a-obj-model src="./PresentOrange.obj"
+          mtl="./PresentOrange.mtl"
+          position="4 0.05 5"
+          scale="1 1 1"
+        ></a-obj-model>
+
+        <!-- Christmas Message -->
+        <a-entity
+          position="-8.5 12.5 10.5"
+          rotation="0 50 0"
+          text="width: 12;
+            lineheight: 50;
+            color: red;
+            anchor: left;
+            baseline: top;
+            wrapCount: 17;
+            value: Merry Christmas and a Happy New Year from GDG Sudbury"
+          ></a-entity>
 
         <!-- Blue sky -->
         <a-sky color="#4286f4"></a-sky>
