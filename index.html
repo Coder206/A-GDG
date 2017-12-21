@@ -35,9 +35,10 @@
             <!-- Stump -->
             <a-cylinder color="#773f00" radius="0.5" position="0 0.5"></a-cylinder>
         </a-entity>
-
-        <a-plane color="#CCC" height="200" width="200" rotation="-90 0 0"></a-plane>
         
+        <!-- Member ball ornament -->
+            <a-sphere src="amber.jpg" radius="1.25" position="3.030 3.564 2.724" rotation="0 -40 0"></a-sphere>
+
         <!-- Snowman -->
         <a-entity position="5 0 -5">
             <a-sphere radius="1" color="white" position="0 0.90"> </a-sphere>
@@ -60,40 +61,39 @@
             <a-cylinder color="brown" height="1.5" radius="0.07" position="1 2.25 0" rotation="0 0 -45 "></a-cylinder>
             <a-cylinder color="brown" height="1.5" radius="0.07" position="-1 2.25 0" rotation="0 0 45 "></a-cylinder>
         </a-entity>
-        
+
         <!--Trevor's Tree-->
         <a-entity position="-11 0 10.59" rotation="0 45 0">
-        <!--Tree-->
-        <a-entity>
-          <a-cylinder position="0 1 0" color="brown" height="2" radius=".5"></a-cylinder>
-          <a-cone position="0 4 0" color="green" radius-bottom="4" radius-top="0" height="4" segments-radial="4"></a-cone>
-          <a-cone position="0 4 0" color="green" radius-bottom="4" radius-top="0" height="4" segments-radial="4" theta-start="45"></a-cone>
-          <a-cone position="0 4.75 0" color="green" radius-bottom="3.5" radius-top="0" height="3.5" segments-radial="4"></a-cone>
-          <a-cone position="0 4.75 0" color="green" radius-bottom="3.5" radius-top="0" height="3.5" segments-radial="4" theta-start="45"></a-cone>
-          <a-cone position="0 5.5 0" color="green" radius-bottom="3" radius-top="0" height="3" segments-radial="4"></a-cone>
-          <a-cone position="0 5.5 0" color="green" radius-bottom="3" radius-top="0" height="3" segments-radial="4" theta-start="45"></a-cone>
-          <a-cone position="0 7 0" color="green" radius-bottom="2.5" radius-top="0" height="4" segments-radial="4"></a-cone>
-          <a-cone position="0 7 0" color="green" radius-bottom="2.5" radius-top="0" height="4" segments-radial="4" theta-start="45"></a-cone>
-        </a-entity>
+            <!--Tree-->
+            <a-entity>
+                <a-cylinder position="0 1 0" color="brown" height="2" radius=".5"></a-cylinder>
+                <a-cone position="0 4 0" color="green" radius-bottom="4" radius-top="0" height="4" segments-radial="4"></a-cone>
+                <a-cone position="0 4 0" color="green" radius-bottom="4" radius-top="0" height="4" segments-radial="4" theta-start="45"></a-cone>
+                <a-cone position="0 4.75 0" color="green" radius-bottom="3.5" radius-top="0" height="3.5" segments-radial="4"></a-cone>
+                <a-cone position="0 4.75 0" color="green" radius-bottom="3.5" radius-top="0" height="3.5" segments-radial="4" theta-start="45"></a-cone>
+                <a-cone position="0 5.5 0" color="green" radius-bottom="3" radius-top="0" height="3" segments-radial="4"></a-cone>
+                <a-cone position="0 5.5 0" color="green" radius-bottom="3" radius-top="0" height="3" segments-radial="4" theta-start="45"></a-cone>
+                <a-cone position="0 7 0" color="green" radius-bottom="2.5" radius-top="0" height="4" segments-radial="4"></a-cone>
+                <a-cone position="0 7 0" color="green" radius-bottom="2.5" radius-top="0" height="4" segments-radial="4" theta-start="45"></a-cone>
+            </a-entity>
 
-        <!-- Star -->
-        <a-entity position="0 9 0">
-          <a-sphere color="gold" position="0 .1 0" radius=".35"></a-sphere>
-          <a-cone color="gold" position="0 .75 0" radius-bottom=".3" radius-top="0" height="1.5"></a-cone>
-          <a-cone color="gold" position="-0.75 .3 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 72"></a-cone>
-          <a-cone color="gold" position="0.75 .3 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 -72"></a-cone>
-          <a-cone color="gold" position="-0.5 -.5 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 144"></a-cone>
-          <a-cone color="gold" position="0.5 -.5 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 -144"></a-cone>
-        </a-entity>
+            <!-- Star -->
+            <a-entity position="0 9 0">
+                <a-sphere color="gold" position="0 .1 0" radius=".35"></a-sphere>
+                <a-cone color="gold" position="0 .75 0" radius-bottom=".3" radius-top="0" height="1.5"></a-cone>
+                <a-cone color="gold" position="-0.75 .3 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 72"></a-cone>
+                <a-cone color="gold" position="0.75 .3 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 -72"></a-cone>
+                <a-cone color="gold" position="-0.5 -.5 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 144"></a-cone>
+                <a-cone color="gold" position="0.5 -.5 0" radius-bottom=".3" radius-top="0" height="1.5" rotation="0 0 -144"></a-cone>
+            </a-entity>
 
-        <!--Presents-->
-        <a-box position="2 .5 0" color="blue" change-color-on-hover>
-          <a-text id="boxText" value="Click Me!" align="center" color="#FFF" visible="false" position="1.4 .5 0.55"
-                  geometry="primitive: plane; width: 1.75" material="color: #333"></a-text>
-        </a-box>
-        <a-box position="-2 .5 0" color="red">
-        </a-box>
-      </a-entity>
+            <!--Presents-->
+            <a-box position="2 .5 0" color="blue" change-color-on-hover>
+                <a-text id="boxText" value="Click Me!" align="center" color="#FFF" visible="false" position="1.4 .5 0.55" geometry="primitive: plane; width: 1.75" material="color: #333"></a-text>
+            </a-box>
+            <a-box position="-2 .5 0" color="red">
+            </a-box>
+        </a-entity>
       
         <!--Sled-->
         <a-entity position="12 0 -7" rotation="0 -45 0">
@@ -175,10 +175,10 @@
             value: Merry Christmas and a Happy New Year from GDG Sudbury"
           ></a-entity>
 
+        <a-plane color="#CCC" height="200" width="200" rotation="-90 0 0"></a-plane>
+
         <!-- Blue sky -->
         <a-sky color="#4286f4"></a-sky>
-        <!-- Member ball ornament -->
-        <a-sphere src="amber.jpg" radius="1.25" position="3.030 3.564 2.724" rotation="0 -40 0"></a-sphere>
     </a-scene>
 </body>
 
